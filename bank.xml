@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bank SYSTEM "bank.dtd">
+<bank>
+  <accounts>
+    <savings_accounts>
+      <savings_account id="a1" interest="0.03">
+        <balance>2500</balance>
+      </savings_account>
+      <savings_account id="a2" interest="0.03">
+        <balance>15075</balance>
+      </savings_account>
+    </savings_accounts>
+    <checking_accounts>
+      <checking_account id="a3">
+        <balance>4025</balance>
+      </checking_account>
+      <checking_account id="a4">
+        <balance>-125</balance>
+      </checking_account>
+      <checking_account id="a5">
+        <balance>325</balance>
+      </checking_account>
+    </checking_accounts>
+  </accounts>
+  <customers>
+    <customer id="c1">
+      <name>Ahmed Ben Rachidon</name>
+      <address>Chaabet Yakhlaf, Bouira</address>
+    </customer>
+    <customer id="c2">
+      <name>Marzouk Wail</name>
+      <address>M'chadallah, BP 205</address>
+    </customer>
+    <customer id="c3">    
+      <name>Anfel Saidi</name>
+      <address>Lakhdaria, Krariche 15b</address>
+    </customer>
+  </customers>
+  <customer_accounts>
+    <customer_account c_id="c1" ac_id="a2"/>
+    <customer_account c_id="c1" ac_id="a3"/>
+    <customer_account c_id="c2" ac_id="a4"/>
+    <customer_account c_id="c3" ac_id="a1"/>
+    <customer_account c_id="c3" ac_id="a5"/>
+  </customer_accounts>
+</bank>
